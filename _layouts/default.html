@@ -1,0 +1,92 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title> {% if page.title %} {{ page.title }} | {% endif %} Another sight </title>
+<link type = "text/css" rel="stylesheet" href="../css/default.css" media:"all"/>	
+</head>
+
+<body>
+<div class="wrapper">
+<header class="mainTitle"><h1 id="title">Another Sight</h1></header>
+<nav role="navigation">
+	<ul>
+   <li><a href="../index.html"> <b>[ 1ne ]</b></a></li>
+    <li><a href="../2wo.html"> [ 2wo ]</a></li>
+    <li><a href="../th3.html">[ th3 ] </a></li>
+    <li><a href="../4our.html"> [ 4our ]</a></li>
+    </ul>
+</nav>
+<header class="main-header"> <br/> <br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/> <br/>
+</header>
+
+<article class="onePost">
+ {{ content }}
+ </article>
+ 
+ <aside id="buttons">
+ 	<ul>
+    <li><a href="http://facebook.com"><img src="../images/buttons/facebook100.jpg"/></a></li>
+ 	</ul>
+ </aside>
+ 
+ <aside class="recentPosts">
+ 	<p class="titleRecentPosts">recent posts</p>
+    <ul>
+  {% for post in site.posts limit: 3 %}
+    <li><a href="{{ post.url }}">{{ post.title }}</a></li>
+  {% endfor %}
+	</ul>
+</aside>
+ 
+ 
+ 
+ <aside class="bannerHomepage">
+ <p class="titleAsideHomepage">Another Sight &hearts; </p>
+ 
+ 
+ 
+
+ <p class="bannerDescription">Butter London is one of my favourite nail lacquers because it does not contain the "bad stuff" that normal nail lacquers contain. So it is better for you and better for the planet.</p>
+   <!--Butter London
+  <a href="http://butterlondon.com"><img src="../images/posts/Banners/butterLondon250.jpg"/></a>
+  -->
+ <!-- animated gif <a href="http://butterlondon.com"><img src="../images/Flash/try-out/butterSol.gif"/></a> -->
+ <embed width="250" height="250" src="../images/Flash/try-out/butterSol.swf">
+</aside>
+ 
+ 
+ <!-- peacock -->
+ <aside class="asidePhotos">
+<img src="../images/posts/aside photos/natgeo_whitepeacock_250.jpg"/>
+ </aside>
+ 
+ <!-- corpus christi -->
+ <aside class="asidePhotos">
+<img src="../images/posts/aside photos/corpus_christi_250.jpg" />
+ </aside>
+ 
+ <!-- life of pi -->
+ <aside class="asidePhotos">
+<img src="../images/posts/aside photos/lifeofpi_250.jpg"/>
+ </aside>
+ 
+  <!-- pantone -->
+ <aside class="asidePhotos">
+<img src="../images/posts/aside photos/pantone_colourof2014_250.jpg"/>
+ </aside>
+ 
+  <!-- phine ka-->
+ <aside class="asidePhotos">
+<a href="http://phinekaphoto.500px.com/home" target="_blank"><img src="../images/posts/aside photos/phineka2_250.jpg"/></a>
+ </aside>
+ 
+ 
+ 
+{% include footer.html %}
+
+</div>
+</body>
+
+
+</html>

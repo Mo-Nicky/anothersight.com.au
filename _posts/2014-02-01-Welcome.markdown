@@ -1,0 +1,31 @@
+---
+layout: post
+title: "Welcome to my site d'happiness"
+description: ""
+tags: [another sight]
+imageURL: mamika_darthvader.jpg
+imageURLhp: mamika2_hp.jpg
+published: true
+---
+
+I love drawing cards. 
+I usually start my day like this because it's usually fun and uplifting. 
+One morning, I drew this card saying: Mother earth is under a lot of stress now it's your turn to do something back.
+
+Holy crap, not really a card I was waiting for. 
+And what does this mean? What can I do or better yet do I want to do to de-stress entire earth....
+
+As the only things I could think about were volunteering to clean up beaches, marching for less violence in Syria 
+and chaining myself to trees in the rainforest to keep them from being cut ,which of course are great causes 
+but not entirely something I see myself doing, I chose to ignore the card. 
+
+A few months in, while I was already learning editing images in photoshop, making banners in flash, 
+writing html and styling html in CSS I came up with the idea of this site.
+
+You see, I am already trying to live a life that makes me happier and one that is less 
+straining for the world we live in so I thought, why not inspire others by sharing this? 
+And if there are a few people inspired by what I share then that means I'm helping 
+to lessen the burden on Mrs E.
+
+So in short:  Making yourself, others and our planet a happier place. That's what this site's about. 
+So welcome to my site d'happiness, I hope you like.

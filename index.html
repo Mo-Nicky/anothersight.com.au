@@ -1,0 +1,70 @@
+---
+layout: default
+title: Another Sight
+bodyTag: One
+---
+
+{% for post in paginator.posts %}
+	
+    <article class="onePost">
+        <p class="date">{{ post.date | date: "%B %d, %Y" }}</p>
+        <a href="{{ post.url }}"> 
+        <h4 class="postTitle">{{ post.title }} </h4>
+          {% if post.imageURL %} 
+          <img src="/images/posts/homepage/{{post.imageURLhp}}" alt="{{ post.description }}" class="{{ post.cornerStyle }} headline"> </a>
+          <!--<img src="/images/posts/{{post.imageURL}}" alt="{{ post.description }}" class="{{ post.cornerStyle }} headline"> -->
+            {% endif %}
+      	<p class="postDescription">{{ post.description }}</p>
+        
+    </article>
+{% endfor %}
+
+<!--  
+{% capture n  %}{{ site.posts | size | divided_by:3}}{% endcapture %}
+{% capture m %} {{ n | times:2 }}{% endcapture %}
+
+
+ <article class="threeColumn">
+
+{% for post in site.posts limit:n %}
+{{ post | content }}
+{% endfor %}
+
+ </article>
+
+ <article class="threeColumn">
+
+{% for post in site.posts limit:n offset:n%}
+{{ post | content }}
+{% endfor %}
+
+ </article>
+
+ <article class="threeColumn">
+
+{% for post in site.posts limit:n offset:m %}
+{{ post | content }}
+{% endfor %}
+
+ </article>
+ 
+ -->
+
+<!-- Pagination links -->
+{% if paginator.previous_page || paginator.next_page %}
+  <nav class="pagination">
+    {% if paginator.previous_page %}
+      {% if paginator.previous_page == 1 %}
+        <a href="/" class="previous">&laquo; Previous</a>
+      {% else %}
+        <a href="/page{{paginator.previous_page}}" class="previous">&laquo; back</a>
+      {% endif %}
+      {% if paginator.next_page %}
+        - 
+      {% endif %}
+    {% endif %}
+    {% if paginator.next_page %}
+      <a href="/page{{paginator.next_page}}" class="next">forth &raquo;</a>
+    {% endif %}
+  </nav>
+{% endif %}

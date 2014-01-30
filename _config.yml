@@ -1,0 +1,29 @@
+paginate: 500 #number of posts per page
+port: 4000
+safe: true
+pygments: true
+permalink: /:title
+columns: 
+
+
+#This setup makes the default jekyll command run a development server that generates 
+#The website as you alter files. In practice this is very useful. 
+#You might want to tweak the server port and pygments flag based on your needs.
+#What are port and pygments flag
+
+#sharing :
+       #provider : all
+       #twitter :  
+         #size :
+         #via :
+         #count :
+     #facebook :
+         #appid : 206812839523777
+         #layout : button_count
+         #font :
+         #faces : false
+         #width : 90
+     #googleplus :
+         #size : small
+         #width :
+         #annotation : bubble

@@ -1,0 +1,44 @@
+@charset "UTF-8";
+/* CSS Document */
+
+body {
+	width:960px;
+	max-width:1024px;
+	min-width:480px;
+	font-family:"American Typewriter","MS Reference Sans Serif"; 
+	font-size:100%;
+	background-color:white;
+	color:rgb(51,51,51);
+}
+
+
+h1 {
+	font-weight:lighter;
+	font-size:2em;
+	letter-spacing:0.4em;
+}
+
+
+
+h1:first-letter{
+	font-size:1.2em;
+	color:#55848A;
+	font-family:"Palatino Linotype";
+	text-decoration:overline;
+}
+
+p {
+	text-align:justify;
+	font-size:0.8em;
+	padding:1em;
+	line-height:1.4em;
+}
+
+div {
+	float:right;
+}
+
+img {
+	width:300px;
+	margin-left:1em;
+}

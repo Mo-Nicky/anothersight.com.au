@@ -1,0 +1,45 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title> {% if page.title %} {{ page.title }} | {% endif %} Another sight </title>
+<link type = "text/css" rel="stylesheet" href="../css/default.css" media:"all"/>	
+</head>
+
+<body>
+
+<div class="wrapper">
+<h1 id="title">Another Sight</h1>
+<nav id="back" role="navigation">
+	<ul>
+    <li><a href="../index.html"> <b>[ back ]</b></a></li>
+    </ul>
+</nav>
+
+<nav id="articlePage">
+	<ul>
+     <li><a href="http://www.renegadecollective.com/" target ="_blank"> The collective: </a></li> 
+    <li><a href="http://restored.nl/" target ="_blank">restored :</a></li>
+    <li><a href="http://www.eleven44designs.com/" target ="_blank">eleven 44 :</a></li> 
+    <li><a href="http://www.sitnie.com/" target="_blank">sit :</a></li> 
+    <li><a href="http://www.signedandnumbered.com.au/" target ="_blank">signed &amp numbered :</a></li>
+    <li><a href="http://www.bonbonboutique.nl/" target ="_blank">Bon Bon Boutique :</a></li> 
+     <li><a href="http://phinekaphoto.500px.com/" target ="_blank">Phine Ka :</a></li> 
+    
+	</ul>
+</nav>
+
+<div> 
+<br/><br/><br/><br/><br/><br/><br/><br/>
+</div>
+
+ <article class="post">
+ {{ content }}
+ </article>
+ 
+ 
+{% include footer.html %}
+
+</div>
+</body>
+</html>

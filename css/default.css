@@ -1,0 +1,875 @@
+@charset "UTF-8";
+/* CSS Document */
+
+body {
+	margin:0;
+	padding:0;
+	-moz-margin:0;
+	-moz-padding:0;
+}
+
+div.wrapper {
+	width:960px;
+	margin:0 auto;
+	text-align:center;
+}
+
+
+/* 
+1. General styles regel 
+
+	font-weight:lighter
+	font-family for titles:"American Typewriter","MS Reference Sans Serif"; 
+	font-family for text: font-family:"Courier New", Courier, monospace;
+	first-letter:overline;
+	text-transform:uppercase
+	
+2. CSS van layouts: Article and Post regel 
+
+*/
+
+
+
+@media only screen and (min-width:750px){
+	
+
+/*default page en general styles*/
+
+desktop styles
+
+body {
+	width:95%;
+	font-family:"American Typewriter","MS Reference Sans Serif"; 
+	font-size:100%;
+	margin: 0 auto;
+	border:1px solid black;
+}
+
+a {
+	text-decoration:none;
+	color:rgb(51,51,51)
+}
+
+a:hover {
+	color:#17b9bf;
+}
+
+div.mainTitle {
+	float:left;
+	width:62%;
+	clear:right;
+}
+
+h1#title {
+	float:left;
+	text-transform:uppercase;
+	font-weight:lighter;
+	font-size:1.5em;
+	letter-spacing:0.4em;
+}
+
+
+h1#title:first-letter {
+	color:#55848A;
+	font-family:"Palatino Linotype";
+	text-decoration:overline;
+	font-size:1.2em;
+	
+}
+
+nav {
+	clear:left;
+	float:right;
+	height:34px;
+	letter-spacing:0.1em;
+	margin-top:-3em;
+
+}
+
+nav ul li{
+	text-decoration:none;
+	display:inline;
+	font-size:0.7em;
+	text-transform:uppercase;
+}
+
+/*border-right:0.1em solid #55848A;*/
+
+header.main-header {	
+	width:100%;
+	clear:both;
+	background: url(../images/header/magazine_10.jpg)no-repeat;	
+	margin-bottom:1em;
+
+}
+
+h5,h6	{ /* wat is dit ook alweer?*/
+	clear:both;
+	float:left;
+}
+
+
+p.postDescription  {
+	font-family:"American Typewriter","MS Reference Sans Serif";
+	letter-spacing:0.1em; 
+	padding:0.2em;
+	font-weight:lighter;
+	text-transform:undercase;
+	font-size:0.9em;
+	letter-spacing:0.2em;
+}
+
+
+p.titleRecentPosts {
+	padding:0.2em;
+	text-transform:uppercase;
+	font-weight:lighter;
+	font-size:0.8em;
+	letter-spacing:0.4em;
+	text-align:center;
+	
+
+}
+
+
+
+p.titleRecentPosts:first-letter {
+	color:#55848A; /*grey blue */
+	color:#17b9bf; /*green*/
+	font-family:"Palatino Linotype";
+	text-decoration:overline;
+	font-size:1em;
+	
+}
+aside.recentPosts {
+	float:left;
+	width:30%;
+	border:0.1em solid #d0d0d0;
+	margin-top:1em;
+	margin-left:1em;
+	text-align:left;
+	padding-right:0.1em;
+	padding-bottom:1em;
+	display:block;
+
+	
+}
+
+aside.recentPosts ul li {
+	font-family:"American Typewriter","MS Reference Sans Serif";
+	letter-spacing:0.1em; 
+	padding:0.1em;
+	font-weight:lighter;
+	text-transform:undercase;
+	font-size:0.9em;
+	list-style-type:lower-greek;
+	
+}
+
+
+aside#buttons {
+	float:left;
+	width:30%;
+	padding-right:0.1em;
+}
+
+aside#buttons ul li {
+	display:inline;
+	text-decoration:none;
+	float:left;
+}
+
+li img {
+	margin:auto;
+}
+
+h4 { /*titel of homepage post */
+	margin-top:-2em;
+	float:left;
+	text-transform:uppercase;
+	font-weight:lighter;
+	font-size:0.9em;
+	letter-spacing:0.4em;
+	text-allign:left;
+	display:block;
+}
+
+
+
+h4:first-letter{
+	font-size:1.2em;
+	font-family:"Palatino Linotype";
+	text-decoration:overline;
+	color:grey;
+	
+}
+
+
+article.onePost { /*this is the background of the  article on the homepage*/
+	float:left;
+	width:64.5%;
+	background-color:#fff1f1; /*pink*/
+	background-color:#edfcfc; /*blue*/
+	background-color:#e4e4e2; /*grey*/
+	background-color:#efefed; /*light grey*/
+	padding:0.5em 1em 0.5em 1em;
+	margin-top:1em;
+	margin-bottom:1em;
+	border-bottom:2px solid white;
+	
+}
+
+/*
+article.postHomepageMiddle {
+	float:left;
+	margin-top:1em;
+	margin-left:2em;
+	border-top:1em;
+	width:33%;
+	background-color:#f0f8e2;
+	padding:1em;
+	
+}
+*/
+
+p.date {
+	clear:left;
+	margin-right:-60em;
+	font-size:0.3em;
+	font-family:"American Typewriter","MS Reference Sans Serif";
+	color:#acfddd;/*greenish*/
+	color:#17b9bf;/*blue*/
+	text-transform:undercase;
+	letter-spacing:0.3em;
+	font-size:0.7em;
+}
+
+
+footer {
+	clear:both;
+	float:left;
+	margin-top:1em;
+}
+
+small{
+	text-transform:uppercase;
+	font-size:0.7em;
+	color:grey;
+	
+}
+
+
+/* 3. CSS van layouts: Article and Post */
+
+nav#articlePage {
+
+	margin-top:0.5em;
+	clear:both;
+	border-top:0.1em dashed grey;
+	border-bottom:0.1em dashed grey;
+	text-transform:uppercase;
+	font-size:0.9em;
+	width:100%;
+	height:7%;
+	text-align:center;
+
+
+}
+
+nav#back {
+	float:right;
+}
+
+nav#articlePage ul li {
+	list-item:none;
+	display:inline;
+	text-decoration:none;
+	padding:1em;
+	font-size:0.75em;
+}
+
+nav#articlePage ul li a {
+	text-decoration:none;
+	color:#81D0D0;
+}
+
+nav#articlePage ul li a:hover {
+	color:pink;
+}
+
+
+nav li {
+	list-item:none;
+	display:inline;	
+}
+
+h1.articleTitle { /*this is the title of the full article */
+	padding-left:3.5em;
+	font-size:0.9em;
+	font-family:"American Typewriter","MS Reference Sans Serif";
+	text-transform:uppercase;
+	font-weight:lighter;
+	letter-spacing:0.4em;
+	float:left;
+}
+
+h1.articleTitle:first-letter {
+	color:#55848A;
+	font-family:"Palatino Linotype";
+	text-decoration:overline;
+	font-size:1.1em;
+}
+
+p.dateArticle { /*this is the date of the full article */
+	float:right;
+	padding-right:4.1em;
+	padding-top:1em;
+	font-size:0.3em;
+	font-family:"American Typewriter","MS Reference Sans Serif";
+	color:#17b9bf;
+	color:grey;
+	text-transform:undercase;
+	letter-spacing:0.3em;
+	font-size:0.7em;
+}
+
+
+article.post  /* this is the width and background of the full article*/{
+	margin-top:0.5em;
+	width:100%;
+	background-color:#efefef;
+
+
+}
+
+section.fullArticle { /* this is the text of the full article */
+	padding:1em 3.5em 1em 3.5em;
+	font-weight:lighter;
+	text-align:justify;
+	font-size:0.9em;
+	font-family:"American Typewriter","MS Reference Sans Serif";
+}
+
+
+
+.postDescription {
+	margin-top:1em;
+	margin-bottom:0.2em;
+}
+
+
+h2.pageDescription {
+	font-size:0.9em;
+	font-family:"American Typewriter","MS Reference Sans Serif";
+	text-transform:uppercase;
+	font-weight:lighter;
+	padding:2em;
+}
+	
+
+
+p.followMe {
+	text-transform:lowercase;
+	font-weight:lighter;
+	font-size:0.9em;
+	font-family:"American Typewriter","MS Reference Sans Serif";
+	
+}
+
+/*css fb-like*/
+
+div.fb-like {
+	float:left;
+	margin-bottom:0.5em;
+	margin-left:3.1em;
+}
+
+/* aside banner css*/
+
+aside.bannerHomepage {
+	width:30%;
+	float:left;
+	border:1px dashed #d0d0d0;
+	margin-left:1em;
+	margin-top:1em;
+	text-align:center;
+	display:block;
+}
+
+aside.bannerHomepage p.titleAsideHomepage {
+	text-transform:uppercase;
+	font-weight:lighter;
+	letter-spacing:0.4em;
+	font-size:0.8em;
+	font-family:"American Typewriter","MS Reference Sans Serif";
+	
+}
+
+p.titleAsideHomepage:first-letter {
+	font-size:1.5em;
+	color:pink;
+	font-family:"Palatino Linotype";
+	text-decoration:overline;
+
+}
+
+p.bannerDescription {
+	text-transform:none;
+	font-weight: lighter;
+	font-family:"American Typewriter","MS Reference Sans Serif";
+	font-size:0.9em;
+	text-align:justify;
+	padding:1em;
+}
+
+aside.bannerPageTwo {
+	width:30%;
+	float:left;
+	border:1px dashed #d0d0d0;
+	margin-left:1em;
+	margin-top:1em;
+	text-align:center;
+	
+}
+
+
+aside.bannerPageTwo p.titleAsidePageTwo {
+	text-transform:uppercase;
+	font-weight:lighter;
+	letter-spacing:0.4em;
+	font-size:0.8em;
+	font-family:"American Typewriter","MS Reference Sans Serif";
+	
+}
+
+p.titleAsidePageTwo:first-letter {
+	font-size:1.5em;
+	color:#78eeea;
+	font-family:"Palatino Linotype";
+	text-decoration:overline;
+
+}
+
+aside.bannerPageThree {
+	width:30%;
+	float:left;
+	border:1px dashed #d0d0d0;
+	margin-left:1em;
+	margin-top:1em;
+	text-align:center;
+}
+
+
+aside.bannerPageThree p.titleAsidePageThree {
+	text-transform:uppercase;
+	font-weight:lighter;
+	letter-spacing:0.4em;
+	font-size:0.8em;
+	font-family:"American Typewriter","MS Reference Sans Serif";
+	
+}
+
+p.titleAsidePageThree:first-letter {
+	font-size:1.5em;
+	color:#c5e7c5;
+	color:orange;
+	font-family:"Palatino Linotype";
+	text-decoration:overline;
+
+}
+
+aside.bannerPageFour {
+	width:30%;
+	float:right;
+	border:1px dashed #d0d0d0;
+	margin-left:1em;
+	margin-top:1em;
+	text-align:center;
+}
+
+
+aside.bannerPageFour p.titleAsidePageFour {
+	text-transform:uppercase;
+	font-weight:lighter;
+	letter-spacing:0.4em;
+	font-size:0.8em;
+	font-family:"American Typewriter","MS Reference Sans Serif";
+	
+}
+
+p.titleAsidePageFour:first-letter {
+	font-size:1.5em;
+	color:orange;
+	font-family:"Palatino Linotype";
+	text-decoration:overline;
+
+}
+
+
+
+/* aside photos css */
+
+aside.asidePhotos {
+	width:30%;
+	float:left;
+	border:1px dashed #d0d0d0;
+	margin-top:1em;
+	margin-left:1em;
+	text-align:center;
+	padding-right:0.1em;
+	padding-top:1em;
+	padding-bottom:1em;
+	display:block;
+}
+ 
+
+/*css page two*/
+
+
+div.mainTitlePageTwo {
+	float:left;
+	width:50%;
+	clear:right;
+}
+
+header.pageTwo{
+	clear:both;
+	background: url(../images/header/header_pagetwo/header_two.jpg)no-repeat;
+	margin-bottom:0.8em;
+}
+
+
+
+
+
+nav#bigPageTwo{
+	margin-top:0.5em;
+	clear:both;
+	border-top:0.1em dashed grey;
+	border-bottom:0.1em dashed grey;
+	text-transform:uppercase;
+	font-size:0.9em;
+	height:7%;
+	width:100%;
+	text-align:center;
+
+
+}
+
+
+
+
+nav#bigPageTwo ul li {
+	list-item:none;
+	display:inline;
+	text-decoration:none;
+	padding:1em;
+	font-size:0.75em;
+}
+
+nav#bigPageTwo ul li a {
+	text-decoration:none;
+	color:#f15a47;
+}
+
+nav#bigPageTwo ul li a:hover {
+	color:pink;
+}
+
+article.pageTwoOne {
+	margin:1em;
+	padding:1em;
+	float:left;
+	width:26%;
+	border-right:0.1em solid #a6b1b6;
+	border-bottom:0.1em solid #a6b1b6;
+	text-align:justify;
+}
+
+
+article.pageTwoTwo {
+	margin:1em;
+	float:left;
+	width:26%;
+	border-right:0.1em solid #a6b1b6;
+	border-bottom:0.1em solid #a6b1b6;
+	text-align:justify;
+	
+}
+
+article.pageTwoThree {
+	margin:1em;
+	float:left;
+	width:26%;
+	border-right:0.1em solid #a6b1b6;
+	border-bottom:0.1em solid #a6b1b6;
+	text-align:justify;
+}
+
+p.quotes {
+	font-size:0.7em;
+	text-transform:lowercase;
+	color:grey;
+}
+
+
+p.titleWebsite {
+	text-transform:uppercase;
+	font-weight:lighter;
+	letter-spacing:0.4em;
+	font-size:0.8em;
+	font-family:"American Typewriter","MS Reference Sans Serif";
+}
+
+p.titleWebsite:first-letter {
+	font-size:1.1em;
+	color:#orange;
+	font-family:"Palatino Linotype";
+	text-decoration:overline;
+}
+
+
+
+/*css page three*/
+
+
+nav#bigPageTwo{
+	margin-top:0.5em;
+	clear:both;
+	border-top:0.1em dashed grey;
+	border-bottom:0.1em dashed grey;
+	text-transform:uppercase;
+	font-size:0.9em;
+	height:7%;
+	width:100%;
+	text-align:center;
+
+
+}
+
+
+
+
+nav#bigPageThree {
+	margin-top:0.5em;
+	clear:both;
+	border-top:0.1em dashed grey;
+	border-bottom:0.1em dashed grey;
+	text-transform:uppercase;
+	font-size:0.9em;
+	height:7%;
+	width:100%;
+	text-align:center;
+
+}
+
+nav#bigPageThree ul li {
+	list-item:none;
+	display:inline;
+	text-decoration:none;
+	background:white;
+	padding:1em;
+	font-size:0.75em;
+}
+
+nav#bigPageThree ul li a {
+	text-decoration:none;
+	color:#55848A;
+}
+
+header.pageThree{
+	clear:both;
+	background:url(../images/header/header_pagethree/header_three.jpg) no-repeat;
+	margin-bottom:0.8em;
+}
+
+article.onePostPageThree {
+	float:left;
+	margin-top:1em;
+	border-top:1em;
+	width:100%;
+	background:url(../images/background/graphpaper.jpg) no-repeat;
+	margin-bottom:2em;
+}
+
+
+
+
+/* css page four about me*/
+
+
+p.aboutMe {
+	font-size:0.8em;
+	font-family:"Verdana, Geneva, sans-serif"; 
+	text-align:justify;
+	font-weight:lighter;
+	
+}
+
+header.pageFour{
+	clear:both;
+	background:url(../images/header/header_pagefour/header_four.jpg)no-repeat;
+	margin-bottom:0.8em;
+}
+
+
+a.mail {
+	text-decoration:underline;
+}
+
+
+p#advertising {
+	font-weight:lighter;
+	font-family:"Verdana, Geneva, sans-serif";	
+	font-size:0.8em;
+}
+
+article.pageThreeOne {
+	margin:1em;
+	float:left;
+	width:20%;
+	border-right:0.1em solid #a6b1b6;
+	border-bottom:0.1em solid #a6b1b6;
+}
+
+
+article.pageThreeTwo {
+	margin:1em;
+	float:left;
+	width:20%;
+	border-right:0.1em solid #a6b1b6;
+	border-bottom:0.1em solid #a6b1b6;
+	
+}
+
+article.pageThreeThree {
+	margin:1em;
+	float:left;
+	width:20%;
+	border-right:0.1em solid #a6b1b6;
+	border-bottom:0.1em solid #a6b1b6;
+}
+
+
+
+
+div p.pageFour {
+	float:left;
+	background-color:#d4f8e6;
+	margin-bottom:1em;
+	border-top:0.2em pink solid;
+	border-bottom:0.2em orange solid;
+	padding-top:2px;
+	padding-bottom:2px;
+	
+}
+
+p.pageFour {
+	font-size:1em;
+	font-weight:lighter;
+	font-family:"American Typewriter","MS Reference Sans Serif"; 
+	background-color:#d4f8e6;
+	margin-bottom:1em;
+}
+
+
+nav#bigPageFour {
+
+	margin-top:0.5em;
+	clear:both;
+	border-top:0.1em dashed grey;
+	border-bottom:0.1em dashed grey;
+	text-transform:uppercase;
+	font-size:0.9em;
+	width:100%;
+	height:7%;
+	text-align:center;
+
+}
+
+nav#bigPageFour ul li {
+	list-item:none;
+	display:inline;
+	text-decoration:none;
+	padding:1em;
+	font-size:0.75em;
+}
+
+nav#bigPageFour ul li a {
+	text-decoration:none;
+	color:#81D0D0;
+}
+
+nav#bigPageFour ul li a:hover {
+	color:pink;
+}
+
+
+/* soundcloud   css*/
+
+iframe.soundcloud {
+	display:block;
+	clear:both;
+	float:right;
+}
+
+}
+
+/* Later ....
+
+/*enlargened image css
+
+/*Add a height attribute and set to largest image's height to prevent overlaying
+
+a {
+	text-decoration:none;
+}
+
+/*.thumbnail img{
+margin: 0 5px 5px 0;
+}
+
+.thumbnail:hover img{
+bor
+
+
+.thumbnail:hover{
+background-color: transparent;
+}
+
+der: 1px solid grey;
+}
+
+.thumbnail span{ /*CSS for enlarged image
+position:absolute;
+width:20%;
+height:auto;
+padding: 5px;
+visibility: hidden;
+color: black;
+text-decoration:none;
+}
+
+/*
+.thumbnail span img{ CSS for enlarged image
+border-width: 0;
+padding: 2px;
+}
+
+
+
+.thumbnail:hover span{ /*CSS for enlarged image
+position:absolute;
+visibility: visible;
+top: 20em;
+left: 20em; /*position where enlarged image should offset horizontally
+z-index: 50;
+
+
+}
+
+
+br {
+	line-height:10px;
+}
+*/
