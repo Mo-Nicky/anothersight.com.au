@@ -1,10 +1,10 @@
 ---
 layout: post
-title: "Welcome to my site d'happiness"
+title: "Welcome &hearts"
 description: ""
 tags: [another sight]
-imageURL: mamika_darthvader.jpg
-imageURLhp: mamika2_hp.jpg
+imageURL: first.jpg
+imageURLhp: first_hp.jpg
 published: true
 ---
 
